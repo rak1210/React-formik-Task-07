@@ -1,0 +1,56 @@
+/* Assuming your Dashboard component is wrapped in a div with class 'dashboard-container' */
+.dashboard-container {
+  display: flex;
+  gap: 20px; /* Adjust the gap between the two sections */
+}
+
+.books-section,
+.authors-section {
+  flex: 1; /* Both sections take equal space */
+  padding: 20px;
+  background-color: #f0f0f0; /* Example background color */
+  border: 1px solid #ccc; /* Example border */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.books-section h2,
+.authors-section h2 {
+  margin-bottom: 10px;
+  color: #333; /* Example text color */
+}
+
+.books-section ul,
+.authors-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.books-section ul li,
+.authors-section ul li {
+  margin-bottom: 10px;
+  display: flex; /* Ensure list items are flex containers */
+  justify-content: space-between; /* Align buttons to the right */
+  align-items: center; /* Center vertically */
+}
+
+.books-section button,
+.authors-section button {
+  margin-left: 10px;
+  padding: 8px 16px; /* Example padding */
+  background-color: #007bff; /* Example button color */
+  color: #fff; /* Example text color */
+  border: none;
+  cursor: pointer;
+  border-radius: 4px; /* Rounded corners */
+}
+
+.books-section button:hover,
+.authors-section button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+.books-section button:disabled,
+.authors-section button:disabled {
+  background-color: #ccc; /* Disabled button color */
+  cursor: not-allowed;
+}
